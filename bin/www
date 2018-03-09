@@ -7,12 +7,13 @@
 var app = require('../app');
 var debug = require('debug')('flame-shop:server');
 var http = require('http');
+const dynamicCfg = require('../dynamicCfg')
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || dynamicCfg.port || '3000');
 app.set('port', port);
 
 /**
