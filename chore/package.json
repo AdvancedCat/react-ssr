@@ -1,0 +1,13 @@
+{
+  "name": "gulp-task",
+  "version": "0.0.1",
+  "private": true,
+  "author": "HongXin",
+  "scripts": {
+    "watch": "gulp supervisor"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-supervisor": "^0.1.2"
+  }
+}
