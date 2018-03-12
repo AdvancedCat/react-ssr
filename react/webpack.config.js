@@ -19,8 +19,12 @@ module.exports = {
             include: __dirname
         },{
             test: /\.s?css$/,
-            use: ['style-loader', 'css-loader'],
-            include: /css/
+            use: [
+              'style-loader',
+              { loader: 'css-loader', options: { importLoaders: 1 } },
+              'postcss-loader',
+              'sass-loader'
+            ]
         }]
     },
     plugins: [

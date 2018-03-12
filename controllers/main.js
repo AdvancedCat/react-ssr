@@ -19,7 +19,7 @@ function routeMain(req, res, next) {
   //   jsonifiedProps: JSON.stringify(props)
   // });
 
-  res.sendFile(path.join(__dirname, '..', '/index.html'))
+  res.sendFile(path.join(__dirname, '..', '/views/index.html'))
 }
 
 module.exports = {
