@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>公共页面</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div id="container">{{{markup}}}</div>
+        <script src="/js/react.production.min.js"></script>
+        <script id="props" type="application/json">
+            {{{ jsonifiedProps }}}
+        </script>
+        <script>
+            var container = document.getElementById("container");
+            var props = JSON.parse(document.getElementById("props").innerHTML);
+            React.renderComponent(Item(props), container);
+        </script>
+    </body>
+</html>
