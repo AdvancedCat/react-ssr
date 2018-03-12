@@ -4,7 +4,7 @@
   "private": true,
   "author": "HongXin",
   "scripts": {
-    "develop": "webpack --config webpack.config.js --progress"
+    "develop": "webpack --config webpack.config.js --progress --watch"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -16,6 +16,7 @@
     "lodash": "^4.17.5",
     "morgan": "~1.8.1",
     "normalize": "^0.3.1",
+    "normalize.css": "^8.0.0",
     "postcss-loader": "^2.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -29,6 +30,7 @@
     "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
     "node-sass": "^4.8.1",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
