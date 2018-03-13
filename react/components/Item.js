@@ -1,6 +1,6 @@
 var React = require("react");
 
-class Item extends React.Component {
+export default class Item extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -18,4 +18,3 @@ class Item extends React.Component {
 }
 
 
-module.exports = Item

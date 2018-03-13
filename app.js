@@ -1,12 +1,12 @@
-var express = require('express')
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var hbs = require("hbs")
+var express = require("express");
+var path = require("path");
+var favicon = require("serve-favicon");
+var logger = require("morgan");
+var cookieParser = require("cookie-parser");
+var bodyParser = require("body-parser");
+var hbs = require("hbs");
 
-var route = require('./route_proxy');
+var route = require("./route_proxy");
 var app = express();
 
 // view engine setup
@@ -42,5 +42,17 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
+// webpack 配置相关
+// import webpack from "webpack";
+// import webpackConfig from "./react/webpack.config.js";
+// if (process.env.NODE_ENV !== "production") {
+//   const compiler = webpack(config);
+//   app.use(
+//     require("webpack-dev-middleware")(compiler, {
+//       publicPath: config.output.publicPath
+//     })
+//   );
+// }
 
 module.exports = app;
