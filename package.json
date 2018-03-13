@@ -5,26 +5,48 @@
   "author": "HongXin",
   "scripts": {
     "start": "node ./bin/www",
-    "babel-node": "babel-node --presets react,es2015 ./bin/www"
+    "babel-node": "babel-node --presets react,es2015 ./bin/www",
+    "deve": "webpack --config ./webpack/webpack.base.js --progress --watch"
   },
   "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.15.2",
+    "hbs": "^4.0.1",
+    "jade": "~1.11.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
     "core-js": "^2.5.3",
     "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "hbs": "^4.0.1",
-    "jade": "~1.11.0",
     "lodash": "^4.17.5",
     "morgan": "~1.8.1",
+    "normalize.css": "^8.0.0",
+    "postcss-loader": "^2.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
+    "react-thunk": "^1.0.0",
     "redux": "^3.7.2",
-    "serve-favicon": "~2.4.2"
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.7",
+    "serve-favicon": "~2.4.2",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-plugin-react-transform": "^3.0.0",
+    "classnames": "^2.2.5",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.8.1",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-middleware": "^3.0.1",
+    "webpack-hot-middleware": "^2.21.2"
   }
 }
