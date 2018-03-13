@@ -1,8 +1,8 @@
-const path = require("path");
-const webpack = require("webpack");
+import path from 'path'
+import webpack from 'webpack'
 
 module.exports = {
-  devtool: "cheap-module-eval-source-map",
+  devtool: "inline-cheap-source-map",
   entry: path.join(__dirname, '..', '/react/app.js'),
   output: {
     // 输出到public目录下

@@ -1,4 +1,4 @@
-var path = require("path");
+import path from 'path'
 import React from "react";
 import ReactDom from "react-dom/server";
 
